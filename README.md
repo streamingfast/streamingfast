@@ -1,13 +1,12 @@
 # The `dfuse` data stack
 
-dfuse is an open source suite of products that handles real-time flows
-of data as well as massively parallelizable operations of blockchain
-data.
+`dfuse` is an Open Source suite of products that enables low-latency, real-time processing
+of blockchain data streams and also allows for massively parallelizable operations on that same data.
 
 It is protocol-aware, supports multiple chain protocols and can be
 used to build higher-order blockchain data services.
 
-dfuse products include a powerful real-time search engine
+`dfuse` products include a powerful real-time search engine
 ([dfuse Search](https://github.com/dfuse-io/search)), mempool
 management technologies (dfuse Lifecycle), historical state services
 and several specialized indexers.
@@ -36,11 +35,11 @@ Top-tier products:
 * [EOSIO Websocket interface](https://github.com/dfuse-io/dfuse-eosio/tree/develop/eosws)
 * [EOSIO Push Guarantee](https://github.com/dfuse-io/dfuse-eosio/tree/develop/eosws)
 * [EOSIO Transaction Lifecycle](https://github.com/dfuse-io/dfuse-eosio/tree/develop/eosws)
-* Ethereum Transaction Lifecycle service, open sources soon
-* Ethereum Historical State service, open sources soon
-* Ethereum Speculative EVM execution engine, open sources soon
-* [Blockchain node manager](https://github.com/dfuse-io/manageos)
-* [Point-in-time recovery backup solution](https://github.com/eoscanada/pitreos) (for EOSIO state & blocks files)
+* [EOSIO Blockchain node manager](https://github.com/dfuse-io/manageos)
+* [EOSIO Point-in-time recovery backup solution](https://github.com/eoscanada/pitreos) (for EOSIO state & blocks files)
+* Ethereum Transaction Lifecycle service, coming as Open Source soon
+* Ethereum Historical State service, coming as Open Source soon
+* Ethereum Speculative EVM execution engine, coming as Open Source soon
 
 Common interfaces:
 * gRPC [service definitions](https://github.com/dfuse-io/service-definitions) and common Protobuf data models.
@@ -52,17 +51,14 @@ Second-tier service mesh:
 * [relayer](https://github.com/dfuse-io/relayer), streaming blocks relayer, for high-availaibility deployments.
 * [block metadata service](https://github.com/dfuse-io/blockmeta), offers fast access to the state of the chain's blocks, aware of on-going forks, finality, etc.
 
-
 Documentation:
 * [The dfuse docs](https://github.com/dfuse-io/docs) rendered at https://docs.dfuse.io
 
 Building blocks:
-
 * The [`bstream` blocks & transactions streaming library](https://github.com/dfuse-io/bstream)
 * The [`kvdb` key-value storage abstraction](https://github.com/dfuse-io/kvdb)
 
 More general purpose Go tooling provided by `dfuse`:
-
 * [Errors management library](https://github.com/dfuse-io/derr)
 * [Object storage abstraction](https://github.com/dfuse-io/dstore)
 * [Binary file packer](https://github.com/dfuse-io/dbin)
@@ -82,4 +78,4 @@ Thanks for supporting us.
 
 ## License
 
-All dfuse components are generally **Apache 2.0** licensed.  See repositories for details.
+All `dfuse` components are generally **Apache 2.0** licensed.  See repositories for details.
