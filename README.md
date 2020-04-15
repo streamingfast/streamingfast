@@ -64,3 +64,7 @@ https://dfuse.io Platform Inc. offers professionnally hosted
 deployments of dfuse, for public and private networks.
 
 Thanks for supporting us.
+
+## License
+
+All dfuse components are generally **Apache 2.0** licensed.  See repositories for details.
