@@ -39,23 +39,38 @@ Top-tier products:
 * Ethereum Transaction Lifecycle service, open sources soon
 * Ethereum Historical State service, open sources soon
 * Ethereum Speculative EVM execution engine, open sources soon
+* [Blockchain node manager](https://github.com/dfuse-io/manageos)
+* [Point-in-time recovery backup solution](https://github.com/eoscanada/pitreos) (for EOSIO state & blocks files)
 
 Common interfaces:
-* gRPC [service-definitions](https://github.com/dfuse-io/service-definitions) and common data models.
-* [GraphQL service](https://github.com/dfuse-io/dgraphql) (see protocol-specific resolvers and schemas)
-* [REST API](https://github.com/dfuse-io/dfuse-eosio/tree/develop/eosws)
+* gRPC [service definitions](https://github.com/dfuse-io/service-definitions) and common Protobuf data models.
+* Common [GraphQL service](https://github.com/dfuse-io/dgraphql) (see protocol-specific resolvers and schemas)
+* [REST + WS for EOSIO](https://github.com/dfuse-io/dfuse-eosio/tree/develop/eosws)
 
 Second-tier service mesh:
 * [merger](https://github.com/dfuse-io/merger), collecting all forks info, for high-availability deployments.
 * [relayer](https://github.com/dfuse-io/relayer), streaming blocks relayer, for high-availaibility deployments.
-* [block metadata service](https://github.com/dfuse-io/blockmeta),
+* [block metadata service](https://github.com/dfuse-io/blockmeta), offers fast access to the state of the chain's blocks, aware of on-going forks, finality, etc.
 
+
+Documentation:
+* [The dfuse docs](https://github.com/dfuse-io/docs) rendered at https://docs.dfuse.io
 
 Building blocks:
 
 * The [`bstream` blocks & transactions streaming library](https://github.com/dfuse-io/bstream)
 * The [`kvdb` key-value storage abstraction](https://github.com/dfuse-io/kvdb)
 
+More general purpose Go tooling provided by `dfuse`:
+
+* [Errors management library](https://github.com/dfuse-io/derr)
+* [Object storage abstraction](https://github.com/dfuse-io/dstore)
+* [Binary file packer](https://github.com/dfuse-io/dbin)
+* [gRPC tools](https://github.com/dfuse-io/dgrpc)
+* [Authentication Plugins Interfaces](https://github.com/dfuse-io/dauth)
+* [Consumption & Metering Plugins Interface](https://github.com/dfuse-io/dmetering)
+* [Mesh Service Discovery library](https://github.com/dfuse-io/dmesh) (used by Search)
+* [Simple obfuscation library](https://github.com/dfuse-io/opaque)
 
 
 ## Managed deployments
