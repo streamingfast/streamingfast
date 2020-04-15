@@ -8,7 +8,7 @@ It is protocol-aware, supports multiple chain protocols and can be
 used to build higher-order blockchain data services.
 
 dfuse products include a powerful real-time search engine
-([dfuse Search](https://github.com/dfuse-io/search), mempool
+([dfuse Search](https://github.com/dfuse-io/search)), mempool
 management technologies (dfuse Lifecycle), historical state services
 and several specialized indexers.
 
@@ -23,8 +23,8 @@ Reach out for binaries in the different
 
 Here's a list of blockchain protocols that integrate with the dfuse stack:
 
-* [*dfuse for EOSIO*](https://github.com/dfuse-io/dfuse-eosio)
-* *dfuse for Ethereum*, open sources soon!
+* [**dfuse for EOSIO**](https://github.com/dfuse-io/dfuse-eosio)
+* **dfuse for Ethereum**, open sources soon!
 
 
 ## Overview
