@@ -117,18 +117,17 @@ Whenever you make a contribution to this project, you license your contribution 
 
 ```
 Developer Certificate of Origin
-Version 1.1
+Version 1.0
 
-Copyright (C) 2004, 2006 The Linux Foundation and its contributors.
-1 Letterman Drive
-Suite D4700
-San Francisco, CA, 94129
+Copyright (C) 2020, dfuse Platform Inc. and its contributors.
+481 Ave Viger West, Suite 300
+Montreal, QC, H2Z 1G6, Canada
 
 Everyone is permitted to copy and distribute verbatim copies of this
 license document, but changing it is not allowed.
 
 
-Developer's Certificate of Origin 1.1
+Developer's Certificate of Origin 1.0
 
 By making a contribution to this project, I certify that:
 
