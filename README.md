@@ -24,7 +24,7 @@ Reach out for binaries in the different
 Here's a list of blockchain protocols that integrate with the dfuse stack:
 
 * [**dfuse for EOSIO**](https://github.com/dfuse-io/dfuse-eosio)
-* **dfuse for Ethereum**, open sources soon!
+* **dfuse for Ethereum**, coming as Open Source soon!
 
 
 ## Overview
