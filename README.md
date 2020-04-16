@@ -2,8 +2,8 @@
 
 # The `dfuse` platform
 
-<div align="center"><img src="https://www.dfuse.io/hubfs/dfuse-website/dfuse-logo2.svg" align="right"
-     alt="dfuse logo" width="315" height="135"></div>
+<div><img src="https://www.dfuse.io/hubfs/dfuse-website/dfuse-logo2.svg" align="right"
+     alt="dfuse logo" width="315" height="100"></div>
 `dfuse` is an Open Source suite of products that enables low-latency, real-time processing
 of blockchain data streams, allows for massively parallelizable operations over historical
 data, and provides the robustness and reliability required by the most demanding loads.
