@@ -1,7 +1,10 @@
-# The `dfuse` data stack
+# The `dfuse` platform
 
 `dfuse` is an Open Source suite of products that enables low-latency, real-time processing
-of blockchain data streams and also allows for massively parallelizable operations on that same data.
+of blockchain data streams, allows for massively parallelizable operations over historical
+data, and provides the robustness and reliability required by the most demanding loads.
+
+## Features
 
 It is protocol-aware, supports multiple chain protocols and can be
 used to build higher-order blockchain data services.
@@ -14,8 +17,7 @@ and several specialized indexers.
 
 ## Installation
 
-Reach out for binaries in the different
-[protocols-specific repositories](#protocols).
+Each blockchain protocol has its own installation method. See section below.
 
 
 ## Protocols
@@ -28,7 +30,9 @@ Here's a list of blockchain protocols that integrate with the dfuse stack:
 
 ## Overview
 
-Top-tier products:
+The dfuse platform is composed of multiple open-source repositories.  Here is a breakdown.
+
+Top-tier products / solutions:
 
 * [dfuse Search](https://github.com/dfuse-io/search), distributed, real-time, fork-aware, general purpose search engine.
 * [dfuse FluxDB](https://github.com/dfuse-io/dfuse-eosio/tree/develop/fluxdb), state snapshotting service for EOSIO.
