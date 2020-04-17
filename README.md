@@ -79,7 +79,7 @@ More general purpose Go tooling provided by `dfuse`:
 
 ## Managed deployments
 
-[dfuse Platform Inc.](https://dfuse.io) offers professionnally hosted
+[dfuse Platform Inc.](https://dfuse.io) offers professionally hosted
 deployments of dfuse, for public and private networks.
 
 Thanks for supporting us.
