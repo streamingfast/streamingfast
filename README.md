@@ -1,10 +1,10 @@
 
 
-# The `dfuse` platform
+# The `StreamingFast` platform
 
 <img src="https://www.dfuse.io/hubfs/dfuse-website/dfuse-logo2.svg" align="right"
-     alt="dfuse logo" width="315" height="100">
-&nbsp;&nbsp;&nbsp;&nbsp; `dfuse` is an Open Source suite of products that enables low-latency, real-time processing
+     alt="StreamingFast logo" width="315" height="100">
+&nbsp;&nbsp;&nbsp;&nbsp; `StreamingFast` is an Open Source suite of products that enables low-latency, real-time processing
 of blockchain data streams, allows for massively parallelizable operations over historical
 data, and provides the robustness and reliability required by the most demanding loads.
 
@@ -13,9 +13,9 @@ data, and provides the robustness and reliability required by the most demanding
 It is protocol-aware, supports multiple chain protocols and can be
 used to build higher-order blockchain data services.
 
-`dfuse` products include a powerful real-time search engine
-([dfuse Search](https://github.com/dfuse-io/search)), mempool
-management technologies (dfuse Lifecycle), historical state services
+`StreamingFast` products include a powerful real-time search engine
+([StreamingFast Search](https://github.com/streamingfast/search)), mempool
+management technologies (StreamingFast Lifecycle), historical state services
 and several specialized indexers.
 
 
@@ -26,64 +26,56 @@ Each blockchain protocol has its own installation method. See section below.
 
 ## Protocols
 
-Here's a list of blockchain protocols that integrate with the dfuse stack:
+Here's a list of blockchain protocols that integrate with the StreamingFast stack:
 
-* [**dfuse for EOSIO**](https://github.com/dfuse-io/dfuse-eosio)
-* **dfuse for Ethereum**, coming as Open Source soon!
+* [**EOSIO on StreamingFast**](https://github.com/streamingfast/sf-eosio)
+* [**Ethereum on StreamingFast**](https://github.com/streamingfast/sf-ethereum)
 
 
 ## Overview
 
-The dfuse platform is composed of multiple open-source repositories.  Here is a breakdown.
+The StreamingFast platform is composed of multiple open-source repositories.  Here is a breakdown.
 
 Top-tier products / solutions:
 
-* [dfuse Search](https://github.com/dfuse-io/search), distributed, real-time, fork-aware, general purpose search engine.
-* [dfuse FluxDB](https://github.com/dfuse-io/dfuse-eosio/tree/develop/fluxdb), state snapshotting service for EOSIO.
-* [EOSIO Websocket interface](https://github.com/dfuse-io/dfuse-eosio/tree/develop/eosws)
-* [EOSIO Push Guarantee](https://github.com/dfuse-io/dfuse-eosio/tree/develop/eosws)
-* [EOSIO Transaction Lifecycle](https://github.com/dfuse-io/dfuse-eosio/tree/develop/eosws)
-* [EOSIO Blockchain node manager](https://github.com/dfuse-io/manageos)
+* [StreamingFast Search](https://github.com/streamingfast/search), distributed, real-time, fork-aware, general purpose search engine.
+* [StreamingFast FluxDB](https://github.com/streamingfast/sf-eosio/tree/develop/fluxdb), state snapshotting service for EOSIO.
+* [EOSIO Websocket interface](https://github.com/streamingfast/sf-eosio/tree/develop/eosws)
+* [EOSIO Push Guarantee](https://github.com/streamingfast/sf-eosio/tree/develop/eosws)
+* [EOSIO Transaction Lifecycle](https://github.com/streamingfast/sf-eosio/tree/develop/eosws)
+* [EOSIO Blockchain node manager](https://github.com/streamingfast/manageos)
 * [EOSIO Point-in-time recovery backup solution](https://github.com/eoscanada/pitreos) (for EOSIO state & blocks files)
 * Ethereum Transaction Lifecycle service, coming as Open Source soon
 * Ethereum Historical State service, coming as Open Source soon
 * Ethereum Speculative EVM execution engine, coming as Open Source soon
 
 Common interfaces:
-* gRPC [service definitions](https://github.com/dfuse-io/service-definitions) and common Protobuf data models.
-* Common [GraphQL service](https://github.com/dfuse-io/dgraphql) (see protocol-specific resolvers and schemas)
-* [REST + WS for EOSIO](https://github.com/dfuse-io/dfuse-eosio/tree/develop/eosws)
+* gRPC [service definitions](https://github.com/streamingfast/service-definitions) and common Protobuf data models.
+* Common [GraphQL service](https://github.com/streamingfast/dgraphql) (see protocol-specific resolvers and schemas)
+* [REST + WS for EOSIO](https://github.com/streamingfast/sf-eosio/tree/develop/eosws)
 
 Second-tier service mesh:
-* [merger](https://github.com/dfuse-io/merger), collecting all forks info, for high-availability deployments.
-* [relayer](https://github.com/dfuse-io/relayer), streaming blocks relayer, for high-availaibility deployments.
-* [block metadata service](https://github.com/dfuse-io/blockmeta), offers fast access to the state of the chain's blocks, aware of on-going forks, finality, etc.
+* [merger](https://github.com/streamingfast/merger), collecting all forks info, for high-availability deployments.
+* [relayer](https://github.com/streamingfast/relayer), streaming blocks relayer, for high-availaibility deployments.
+* [block metadata service](https://github.com/streamingfast/blockmeta), offers fast access to the state of the chain's blocks, aware of on-going forks, finality, etc.
 
 Documentation:
-* [The dfuse docs](https://github.com/dfuse-io/docs) rendered at https://docs.dfuse.io
+* [The StreamingFast docs](https://github.com/streamingfast/docs) rendered at https://docs.dfuse.io
 
 Building blocks:
-* The [`bstream` blocks & transactions streaming library](https://github.com/dfuse-io/bstream)
-* The [`kvdb` key-value storage abstraction](https://github.com/dfuse-io/kvdb)
+* The [`bstream` blocks & transactions streaming library](https://github.com/streamingfast/bstream)
+* The [`kvdb` key-value storage abstraction](https://github.com/streamingfast/kvdb)
 
-More general purpose Go tooling provided by `dfuse`:
-* [Errors management library](https://github.com/dfuse-io/derr)
-* [Object storage abstraction](https://github.com/dfuse-io/dstore)
-* [Binary file packer](https://github.com/dfuse-io/dbin)
-* [gRPC tools](https://github.com/dfuse-io/dgrpc)
-* [Authentication Plugins Interfaces](https://github.com/dfuse-io/dauth)
-* [Consumption & Metering Plugins Interface](https://github.com/dfuse-io/dmetering)
-* [Mesh Service Discovery library](https://github.com/dfuse-io/dmesh) (used by Search)
-* [Simple obfuscation library](https://github.com/dfuse-io/opaque)
-
-
-## Managed deployments
-
-[dfuse Platform Inc.](https://dfuse.io) offers professionnally hosted
-deployments of dfuse, for public and private networks.
-
-Thanks for supporting us.
+More general purpose Go tooling provided by `StreamingFast`:
+* [Errors management library](https://github.com/streamingfast/derr)
+* [Object storage abstraction](https://github.com/streamingfast/dstore)
+* [Binary file packer](https://github.com/streamingfast/dbin)
+* [gRPC tools](https://github.com/streamingfast/dgrpc)
+* [Authentication Plugins Interfaces](https://github.com/streamingfast/dauth)
+* [Consumption & Metering Plugins Interface](https://github.com/streamingfast/dmetering)
+* [Mesh Service Discovery library](https://github.com/streamingfast/dmesh) (used by Search)
+* [Simple obfuscation library](https://github.com/streamingfast/opaque)
 
 ## License
 
-All `dfuse` components are generally **Apache 2.0** licensed.  See repositories for details.
+All `StreamingFast` components are generally **Apache 2.0** licensed.  See repositories for details.
