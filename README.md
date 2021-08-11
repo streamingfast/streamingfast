@@ -2,7 +2,7 @@
 
 # The `StreamingFast` platform
 
-<img src="https://www.dfuse.io/hubfs/dfuse-website/dfuse-logo2.svg" align="right"
+<img src="https://streamingfast.io/streamingfast-reversed.png" align="right"
      alt="StreamingFast logo" width="315" height="100">
 &nbsp;&nbsp;&nbsp;&nbsp; `StreamingFast` is an Open Source suite of products that enables low-latency, real-time processing
 of blockchain data streams, allows for massively parallelizable operations over historical

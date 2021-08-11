@@ -1,4 +1,4 @@
-# Contributing to dfuse
+# Contributing to StreamingFast
 
 Interested in contributing? That's awesome! Here are some guidelines to get started quickly and easily:
 
@@ -7,7 +7,7 @@ Interested in contributing? That's awesome! Here are some guidelines to get star
   - [Bug Reports](#bug-reports)
   - [Feature Requests](#feature-requests)
   - [Change Requests](#change-requests)
-- [Working on dfuse](#working-on-dfuse)
+- [Working on Streaming Fast](#working-on-streamingfast)
   - [Branching Conventions](#branching-conventions)
   - [Submitting Pull Requests](#submitting-pull-requests)
 - [Conduct](#conduct)
@@ -16,8 +16,8 @@ Interested in contributing? That's awesome! Here are some guidelines to get star
 
 ## Repositories layout
 
-This guide applies to all the repositories that compose the dfuse
-platform, following that dfuse uses many smaller repos, rather than
+This guide applies to all the repositories that compose the StreamingFast
+platform, following that StreamingFast uses many smaller repos, rather than
 one huge mono-repo.
 
 See a map of the repositories in the [README.md](./README.md#overview)
@@ -35,7 +35,7 @@ If unsure where to file an issue, start with the
 heart.  Otherwise, please file your issues in the repository most
 appropriate. For example, if the issue is with a core feature of the
 `search` engine, file an issue in the
-https://github.com/dfuse-io/search project.
+https://github.com/streamingfast/search project.
 
 
 ### Bug Reports
@@ -48,12 +48,12 @@ Guidelines for bug reports:
    reported.
 
 1. **Check if the issue has been fixed** &mdash; look for
-   [closed issues in the current milestone](https://github.com/dfuse-io/dfuse-eosio/issues?q=is%3Aissue+is%3Aclosed)
+   [closed issues in the current milestone](https://github.com/streamingfast/sf-eosio/issues?q=is%3Aissue+is%3Aclosed)
    or try to reproduce it using the latest `develop` branch.
 
 A good bug report shouldn't leave others needing to chase you up for more information. Be sure to include the details of your environment and relevant tests that demonstrate the failure.
 
-[Report a bug](https://github.com/dfuse-io/dfuse-eosio/issues/new?title=Bug%3A)
+[Report a bug](https://github.com/streamingfast/sf-eosio/issues/new?title=Bug%3A)
 
 ### Feature Requests
 
@@ -65,13 +65,13 @@ Feature requests are welcome. Before you submit one be sure to have:
 
 ### Change Requests
 
-Change requests cover both architectural and functional changes to how dfuse works. If you have an idea for a new or different dependency, a refactor, or an improvement to a feature, etc - please be sure to:
+Change requests cover both architectural and functional changes to how StreamingFast works. If you have an idea for a new or different dependency, a refactor, or an improvement to a feature, etc - please be sure to:
 
 1. **Use the GitHub search** and check someone else didn't get there first
 1. Take a moment to think about the best way to make a case for, and explain what you're thinking. Are you sure this shouldn't really be
    a [bug report](#bug-reports) or a [feature request](#feature-requests)?  Is it really one idea or is it many? What's the context? What problem are you solving? Why is what you are suggesting better than what's already there?
 
-## Working on dfuse
+## Working on StreamingFast
 
 Code contributions are welcome and encouraged!
 
@@ -79,10 +79,10 @@ Please follow these guidelines when submitting code:
 
 ### Branching Conventions
 
-Across the dfuse repositories, we follow a fairly consistent convention for branch names:
+Across the StreamingFast repositories, we follow a fairly consistent convention for branch names:
 
 - **develop** is the development branch. All work on the next release happens here so you should generally branch off `develop`. Do **not** use this branch for a production site.
-- **master** contains the latest releases. This branch may be used in production. Do **not** use this branch to work on dfuse's source.
+- **master** contains the latest releases. This branch may be used in production. Do **not** use this branch to work on StreamingFast's source.
 - **feature/something** contains feature branches where collaboration can exist, and is sync (rebased or merges) with `develop` from time to time.
 - **hotfix/something** for hotfixes.
 
@@ -119,7 +119,7 @@ Whenever you make a contribution to this project, you license your contribution 
 Developer Certificate of Origin
 Version 1.0
 
-Copyright (C) 2020, dfuse Platform Inc. and its contributors.
+Copyright (C) 2020, StreamingFast Inc. and its contributors.
 481 Ave Viger West, Suite 300
 Montreal, QC, H2Z 1G6, Canada
 
